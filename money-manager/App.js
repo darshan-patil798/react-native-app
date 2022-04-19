@@ -5,14 +5,14 @@ import AddNoteForm from './components/AddNoteForm';
 import ListOfNotes from './components/ListOfNotes';
 
 export default function App() {
-  const [allNotes,setAllNotes]=useState([""])
+  const [allNotes, setAllNotes] = useState([])
 
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-      <AddNoteForm allNotes={allNotes} setAllNotes={setAllNotes}/>
+      <AddNoteForm allNotes={allNotes} setAllNotes={setAllNotes} />
       <View style={{ marginVertical: 12, borderColor: "black", justifyContent: "center" }}>
-        <ListOfNotes allNotes={allNotes} setAllNotes={setAllNotes}/>
+        <ListOfNotes allNotes={allNotes} setAllNotes={setAllNotes} />
       </View>
     </SafeAreaView>
   );
